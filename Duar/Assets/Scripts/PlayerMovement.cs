@@ -17,20 +17,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up * 200);
+            rb.AddForce(Vector2.up * 500);
 
         }
         xInput = Input.GetAxis("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            rb.AddForce(Vector2.left * 200);
+            rb.AddForce(Vector2.left * 500);
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            rb.AddForce(Vector2.right * 200);
+            rb.AddForce(Vector2.right * 500);
         }
     }
 }
