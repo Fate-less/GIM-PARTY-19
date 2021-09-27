@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     float xInput;
     float zInput;
     public float speed;
+    public GameObject gameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             rb.AddForce(Vector2.right * 500);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        if (collision2D.gameObject.tag == "Enemy")
+        {
+            Collider2D.Destroy(gameObject);
+            gameOver.SetActive(true);
         }
     }
 }
