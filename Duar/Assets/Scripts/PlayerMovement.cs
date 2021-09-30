@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
-    float xInput;
-    float zInput;
-    public float speed;
+    public Rigidbody2D rb;
+    public float moveSpeed = 5;
+    Vector2 movement;
+    public vectorValue startingPosition;
+    public Animator animator;
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
     public GameObject gameOver;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector2.up * 500);
-
-        }
-        xInput = Input.GetAxis("Horizontal");
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rb.AddForce(Vector2.left * 500);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rb.AddForce(Vector2.right * 500);
-        }
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
@@ -43,4 +40,6 @@ public class PlayerMovement : MonoBehaviour
             gameOver.SetActive(true);
         }
     }
+
+    
 }
