@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 132987531}
   - component: {fileID: 132987535}
   - component: {fileID: 132987534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,8 +477,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1988071159
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 1, b: 0.33205724, a: 1}
@@ -1108,6 +1108,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 885700161}
     - target: {fileID: 58893745608906107, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
+      propertyPath: jumpSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 58893745608906107, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 58893745608906107, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 11400000, guid: ba6595acebdc44343ab0af048adf6b51, type: 2}
@@ -1169,7 +1177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607524871467988626, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607524871467988626, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5211510538834101437, guid: 0ff757f921bf74044b0ab810c4f41701, type: 3}
       propertyPath: m_SortingLayer
@@ -1369,7 +1381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543666767}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3210,7 +3222,7 @@ GameObject:
   - component: {fileID: 1319749725}
   - component: {fileID: 1319749724}
   - component: {fileID: 1319749723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3843,7 +3855,7 @@ GameObject:
   - component: {fileID: 1562300661}
   - component: {fileID: 1562300660}
   - component: {fileID: 1562300659}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4529,7 +4541,7 @@ GameObject:
   - component: {fileID: 1865066376}
   - component: {fileID: 1865066375}
   - component: {fileID: 1865066374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

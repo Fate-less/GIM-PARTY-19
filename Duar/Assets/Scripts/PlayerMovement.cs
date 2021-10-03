@@ -5,14 +5,17 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float moveSpeed = 5;
+    public float moveSpeed = 5f;
+    public float jumpSpeed = 5f;
     Vector2 movement;
     public vectorValue startingPosition;
     public Animator animator;
+    private CapsuleCollider2D box;
+    [SerializeField] private LayerMask layerMask;
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        
     }
 
     public GameObject gameOver;
@@ -20,18 +23,53 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        transform.position = startingPosition.initialValue;
+        box = transform.GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        
+        if (Input.GetKey("space") && IsGrounded())
+        {
+            float jumpVelocity = jumpSpeed;
+            rb.velocity = Vector2.up * jumpVelocity;
+        }
+        Movement();
+
+        if (IsGrounded())
+        {
+            if(rb.velocity.x != 0)
+            {
+                animator.SetFloat("Horizontal", rb.velocity.x);
+                animator.SetFloat("Speed", rb.velocity.sqrMagnitude);
+            } else
+            {
+                animator.SetFloat("Horizontal", rb.velocity.x * 0);
+                animator.SetFloat("Speed", rb.velocity.sqrMagnitude * 0);
+            }
+        }
     }
 
+    private bool IsGrounded()
+    {
+        RaycastHit2D raycast = Physics2D.BoxCast(box.bounds.center, box.bounds.size, 0f, Vector2.down, .1f, layerMask);
+        return raycast.collider != null;
+    }
+    private void Movement()
+    {
+        float speed = moveSpeed;
+        if(Input.GetKey("left"))
+        {
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
+        } else
+        {
+            if(Input.GetKey("right"))
+            {
+                rb.velocity = new Vector2(+speed, rb.velocity.y);
+            } else { }
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.tag == "Enemy")
