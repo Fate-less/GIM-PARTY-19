@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\doorAnimation.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\oldPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\toAmogus.cs" />
     <Compile Include="Assets\Scripts\doorTrigger.cs" />
     <Compile Include="Assets\Scripts\doorController.cs" />
