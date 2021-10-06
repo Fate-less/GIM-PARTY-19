@@ -30,6 +30,7 @@ public class Portal : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         Player.transform.position = new Vector2(Teleporter.transform.position.x, Teleporter.transform.position.y);
+        Debug.Log("Player Teleported");
     }
     
 }

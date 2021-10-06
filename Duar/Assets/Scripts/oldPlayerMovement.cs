@@ -21,6 +21,7 @@ public class oldPlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        Debug.Log("Player spawn");
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class oldPlayerMovement : MonoBehaviour
         if (collision2D.gameObject.tag == "Enemy")
         {
             Collider2D.Destroy(gameObject);
+            Debug.Log("Game Over");
             gameOver.SetActive(true);
         }
     }

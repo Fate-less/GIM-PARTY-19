@@ -11,5 +11,6 @@ public class toAmogus : MonoBehaviour
     {
         playerStorage.initialValue = playerPosition;    
         SceneManager.LoadScene(1);
+        Debug.Log("Player Teleported, Next Scene");
     }
 }

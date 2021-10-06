@@ -11,10 +11,12 @@ public class doorTrigger : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             door.OpenDoor();
+            Debug.Log("Door Opened");
         }
         if (Input.GetMouseButtonUp(0))
         {
             door.CloseDoor();
+            Debug.Log("Door Closed");
         }
     }
 }
