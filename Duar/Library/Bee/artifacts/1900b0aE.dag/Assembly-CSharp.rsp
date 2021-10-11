@@ -353,10 +353,12 @@
 "Assets/Scripts/Floor.cs"
 "Assets/Scripts/GameHandler.cs"
 "Assets/Scripts/oldPlayerMovement.cs"
+"Assets/Scripts/peek.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Portal.cs"
 "Assets/Scripts/toAmogus.cs"
 "Assets/Scripts/toDark.cs"
+"Assets/Scripts/toEnding.cs"
 "Assets/Scripts/toTileventure.cs"
 "Assets/Scripts/vectorValue.cs"
 -langversion:8.0

@@ -71,8 +71,10 @@
     <Compile Include="Assets\Scripts\toAmogus.cs" />
     <Compile Include="Assets\Scripts\doorTrigger.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\Scripts\toEnding.cs" />
     <Compile Include="Assets\Scripts\toDark.cs" />
     <Compile Include="Assets\Scripts\doorController.cs" />
+    <Compile Include="Assets\Scripts\peek.cs" />
     <Compile Include="Assets\Scripts\doorTriggerAnim.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
   </ItemGroup>
