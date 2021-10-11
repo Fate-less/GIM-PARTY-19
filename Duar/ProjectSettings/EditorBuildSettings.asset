@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AMOGUS.unity
+    guid: 151208e5e086dde4da3c4d4776eb4748
+  - enabled: 1
+    path: Assets/Scenes/Tileventure.unity
+    guid: 3b7a134cc665bc14aa84a1303891264d
+  - enabled: 1
+    path: Assets/Scenes/Dark.unity
+    guid: 305afcfe4f5da8e44b80b0a5ee7cd0ab
   m_configObjects: {}
