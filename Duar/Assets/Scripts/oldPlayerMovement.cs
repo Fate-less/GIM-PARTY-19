@@ -10,6 +10,7 @@ public class oldPlayerMovement : MonoBehaviour
     Vector2 movement;
     public vectorValue startingPosition;
     public Animator animator;
+    public AudioSource theme;
 
     void FixedUpdate()
     {
@@ -22,6 +23,8 @@ public class oldPlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         Debug.Log("Player spawn");
+        theme.Play();
+        Debug.Log("Now playing theme");
     }
 
     // Update is called once per frame

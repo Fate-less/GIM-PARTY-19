@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class doorTrigger : MonoBehaviour
 {
+    public AudioSource whoaw;
     [SerializeField] private doorController door;
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            whoaw.Play();
             door.OpenDoor();
             Debug.Log("Door Opened");
         }
