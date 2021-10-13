@@ -54,10 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
+    <Compile Include="Assets\Scripts\NextSceneButton.cs" />
     <Compile Include="Assets\Scripts\vectorValue.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
-    <Compile Include="Assets\Scripts\toTileventure.cs" />
     <Compile Include="Assets\Scripts\Floor.cs" />
+    <Compile Include="Assets\Scripts\NextScene.cs" />
     <Compile Include="Assets\Scripts\doorAnimation.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\doorpress.cs" />
@@ -65,16 +66,12 @@
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\oldPlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\toAmogus.cs" />
     <Compile Include="Assets\Scripts\doorTrigger.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
-    <Compile Include="Assets\Scripts\toEnding.cs" />
-    <Compile Include="Assets\Scripts\toDark.cs" />
     <Compile Include="Assets\Scripts\doorController.cs" />
     <Compile Include="Assets\Scripts\peek.cs" />
     <Compile Include="Assets\Scripts\doorTriggerAnim.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\toTutorial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
