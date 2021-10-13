@@ -360,6 +360,7 @@
 "Assets/Scripts/toDark.cs"
 "Assets/Scripts/toEnding.cs"
 "Assets/Scripts/toTileventure.cs"
+"Assets/Scripts/toTutorial.cs"
 "Assets/Scripts/vectorValue.cs"
 -langversion:8.0
 

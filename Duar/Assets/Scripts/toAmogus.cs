@@ -10,7 +10,7 @@ public class toAmogus : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         playerStorage.initialValue = playerPosition;    
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         Debug.Log("Player Teleported, Next Scene");
     }
 }

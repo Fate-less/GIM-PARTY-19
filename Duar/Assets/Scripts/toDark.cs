@@ -10,7 +10,7 @@ public class toDark : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         playerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
         Debug.Log("Player Teleported, Next Scene");
     }
 }
