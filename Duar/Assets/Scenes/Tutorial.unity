@@ -1766,10 +1766,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 641032769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7104ab3ca4c3cc84faee5a3344e89b4c, type: 3}
+  m_Script: {fileID: 11500000, guid: a3be8a5222931f54b8df7c5a8a98b9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: -0.76, y: 4.47}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: ba6595acebdc44343ab0af048adf6b51, type: 2}
 --- !u!58 &641032771
 CircleCollider2D:

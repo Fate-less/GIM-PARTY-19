@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 143750183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d61a4a79888c0444a9b19e1efd94758, type: 3}
+  m_Script: {fileID: 11500000, guid: 16d31cf7a547be449b4bc98557097c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &143750186
@@ -219,7 +219,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 143750185}
-        m_TargetAssemblyTypeName: toTutorial, Assembly-CSharp
+        m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:

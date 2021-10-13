@@ -2480,7 +2480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368552062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d70d8c519d04e4d90a46a1b7b77792, type: 3}
+  m_Script: {fileID: 11500000, guid: a3be8a5222931f54b8df7c5a8a98b9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPosition: {x: 0, y: 0}

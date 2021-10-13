@@ -1696,9 +1696,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1536436754}
-  - component: {fileID: 1536436752}
   - component: {fileID: 1536436753}
   - component: {fileID: 1536436755}
+  - component: {fileID: 1536436752}
   m_Layer: 0
   m_Name: finish
   m_TagString: Untagged
@@ -1715,10 +1715,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536436751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f591d698c7d62ac40a666e7e3611b237, type: 3}
+  m_Script: {fileID: 11500000, guid: a3be8a5222931f54b8df7c5a8a98b9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: 2, y: 2}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: ba6595acebdc44343ab0af048adf6b51, type: 2}
 --- !u!212 &1536436753
 SpriteRenderer:
