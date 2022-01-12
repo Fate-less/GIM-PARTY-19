@@ -302,6 +302,7 @@
 -r:"K:/Unity/Editor/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"K:/Unity/Editor/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"K:/Unity/Editor/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+-r:"K:/Unity/Editor/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"K:/Unity/Editor/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 "Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner/Assertions/AllocatingGCMemoryConstraint.cs"
